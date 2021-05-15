@@ -12,8 +12,8 @@ let fullName = firstName + " " + lastName;
 // 4 - Console log the value of `fullName`
 console.log( 'Duy Dao' );
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 8;
-console.log( '8' );
+let luckyNumber = '8';
+console.log( 'luckyNumber' );
 // 6 - Console log this sentence, adding in the variables you created above:
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
@@ -72,14 +72,29 @@ else {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
-let mostPets = 0;
-if ( pets < friendsPets ) {
-  { mostPets = friendsPets; }
+let mostPets = '';
+if ( pets > friendsPets ) {
+  mostPets = pets;
 }
 else {
-  { mostPets = pets; }
+  mostPets = friendsPets;
 }
 console.log( mostPets );
+
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+switch (pets > friendsPets) {
+  case true:
+    mostPets = pets;
+    break;
+  case false:
+    mostPets = friendsPets;
+    break;
+  default:
+
+}
+//Have a question about why default populated when using the switch command.
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+let plans = adventurous === true ? 'Adventures are great!' : 'How about we stay home?';
+//found function functionName() {} code but wasn't sure how to use it. Putting in notes here to ask questions
+//about it later. Found on https:developer.mozilla.org/en-US/docs/Web/JavaScript/Referenxe/Operators/Conditional_Operator
